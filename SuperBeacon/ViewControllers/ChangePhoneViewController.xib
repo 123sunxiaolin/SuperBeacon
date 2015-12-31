@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePhoneViewController">
+            <connections>
+                <outlet property="codeView" destination="Fzx-lU-qqE" id="RgL-uY-BLO"/>
+                <outlet property="phoneBackView" destination="Xso-CI-d2u" id="gsN-AV-ITA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fQc-hx-pxW" userLabel="backgroundImageView" customClass="NINetworkImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xso-CI-d2u">
+                    <rect key="frame" x="0.0" y="16" width="600" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wy9-ob-rVf">
+                            <rect key="frame" x="12" y="0.0" width="588" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="wy9-ob-rVf" firstAttribute="leading" secondItem="Xso-CI-d2u" secondAttribute="leading" constant="12" id="19y-QA-b0V"/>
+                        <constraint firstAttribute="trailing" secondItem="wy9-ob-rVf" secondAttribute="trailing" id="JKa-9q-81g"/>
+                        <constraint firstItem="wy9-ob-rVf" firstAttribute="top" secondItem="Xso-CI-d2u" secondAttribute="top" id="Mat-es-Fpn"/>
+                        <constraint firstAttribute="height" constant="44" id="lGs-aL-JJP"/>
+                        <constraint firstAttribute="bottom" secondItem="wy9-ob-rVf" secondAttribute="bottom" id="ngw-Np-ogm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzx-lU-qqE">
+                    <rect key="frame" x="0.0" y="70" width="600" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gqM-rn-rbE">
+                            <rect key="frame" x="12" y="0.0" width="473" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaZ-ay-4Ow">
+                            <rect key="frame" x="436" y="6" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="5Fl-k3-qVG"/>
+                                <constraint firstAttribute="height" constant="30" id="zZ7-np-YLM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="获取验证码" backgroundImage="register_btn_skin_selected">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KaZ-ay-4Ow" firstAttribute="leading" secondItem="gqM-rn-rbE" secondAttribute="trailing" id="2Jf-Vs-KMD"/>
+                        <constraint firstItem="gqM-rn-rbE" firstAttribute="leading" secondItem="Fzx-lU-qqE" secondAttribute="leading" constant="12" id="CGw-LD-ldJ"/>
+                        <constraint firstAttribute="height" constant="44" id="KUI-ga-HLs"/>
+                        <constraint firstAttribute="trailing" secondItem="KaZ-ay-4Ow" secondAttribute="trailing" constant="15" id="QFs-tB-oOg"/>
+                        <constraint firstAttribute="bottom" secondItem="gqM-rn-rbE" secondAttribute="bottom" id="YQC-A9-0eA"/>
+                        <constraint firstItem="gqM-rn-rbE" firstAttribute="top" secondItem="Fzx-lU-qqE" secondAttribute="top" id="ghC-V3-a7F"/>
+                        <constraint firstAttribute="centerY" secondItem="KaZ-ay-4Ow" secondAttribute="centerY" id="tq4-Xt-KqL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Fzx-lU-qqE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bgg-eb-9a7"/>
+                <constraint firstItem="Xso-CI-d2u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="Goo-s5-joU"/>
+                <constraint firstAttribute="trailing" secondItem="fQc-hx-pxW" secondAttribute="trailing" id="TOO-Wd-VdM"/>
+                <constraint firstItem="fQc-hx-pxW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="awM-Uq-YU4"/>
+                <constraint firstAttribute="bottom" secondItem="fQc-hx-pxW" secondAttribute="bottom" id="fVD-pL-6gQ"/>
+                <constraint firstItem="Fzx-lU-qqE" firstAttribute="top" secondItem="Xso-CI-d2u" secondAttribute="bottom" constant="10" id="pCl-fC-VM0"/>
+                <constraint firstItem="fQc-hx-pxW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sDC-Um-6Jg"/>
+                <constraint firstAttribute="trailing" secondItem="Fzx-lU-qqE" secondAttribute="trailing" id="sEB-e2-tot"/>
+                <constraint firstItem="Xso-CI-d2u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="t5c-sm-Ekt"/>
+                <constraint firstAttribute="trailing" secondItem="Xso-CI-d2u" secondAttribute="trailing" id="whE-mc-Uyu"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="183"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="register_btn_skin_selected" width="9" height="10"/>
+    </resources>
+</document>
